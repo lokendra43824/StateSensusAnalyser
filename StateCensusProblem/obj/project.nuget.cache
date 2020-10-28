@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "WkWt5yYfxEkRd++806waJ2qXt+A2CQLhIFiPt3o6i8aJH3rqh7VB7xl6g+nmiZ1wN9BoJunLnCUpVq8oPcub6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NAGENDRA AND JANAKI\\source\\repos\\StateCensusProblem\\StateCensusProblem\\StateCensusProblem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\csvhelper\\15.0.8\\csvhelper.15.0.8.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.0\\microsoft.extensions.configuration.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.0\\microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.0.0\\microsoft.extensions.configuration.binder.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.logging\\3.0.0\\microsoft.extensions.logging.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.0\\microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\nlog\\4.7.4\\nlog.4.7.4.nupkg.sha512",
+    "C:\\Users\\NAGENDRA AND JANAKI\\.nuget\\packages\\nlog.extensions.logging\\1.6.5\\nlog.extensions.logging.1.6.5.nupkg.sha512"
+  ],
+  "logs": []
+}
