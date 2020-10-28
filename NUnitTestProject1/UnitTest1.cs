@@ -13,18 +13,18 @@ namespace NUnitTestProject1
         static string indianStateCensusHeaders = @"State,Population,AreaInSqKm,DensityPerSqKm";
         static string indianStateCodeHeaders = @"SrNo,State Name,TIN,StateCode";
         static string indianStateCensusFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\IndiaStateCensusData.csv";
-        static string wrongHeaderIndianCensusFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\WrongIndiaStateCensusData.csv";
-        static string delimiterIndianCensusFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\DelimiterIndiaStateCensusData.csv";
-        static string wrongIndianStateCensusFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\WrongIndiaStateCensusData.csv";
-        static string wrongIndianStateCensusFileFileType = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\WrongIndiaStateCensusData.csv";
+       // static string wrongHeaderIndianCensusFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\WrongIndiaStateCensusData.csv";
+       // static string delimiterIndianCensusFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\DelimiterIndiaStateCensusData.csv";
+        static string wrongIndianStateCensusFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\abc.csv";
+        //static string wrongIndianStateCensusFileType = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\IndiaStateCensusData.txt";
         static string indianStateCodeFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\IndiaStateCode.csv";
-        static string wrongindianStateCodeFileType = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\WrongIndiaStateCode.csv";
+        static string wrongindianStateCodeFileType = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\IndiaStateCode.txt";
         static string delimiterIndianStateCodeFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\DelimiterIndiaStateCode.csv";
         static string wrongHeaderStateCodeFilePath = @"C:\Users\NAGENDRA AND JANAKI\source\repos\StateCensusProblem\StateCensusProblem\NewFolder\WrongIndiaStateCode.csv";
         StateCensusProblem.POCO.CensusAnalyser censusAnalyser;
         Dictionary<string, CensusDTO> totalRecord;
         Dictionary<string, CensusDTO> stateRecord;
-        private string wrongIndianStateCensusFileType;
+        
 
         [SetUp]
         public void Setup()
