@@ -44,15 +44,15 @@ namespace NUnitTestProject1
 
 
         }
-        //test 2
+        //TC2
         //given not existing stateCodeFIle should throw FileNotFound Exception
         [Test]
-        public void GivenIncorrectStateCensusFile_ShouldThrowException()
+        public void GivenIncorrectStateCodeFile_ShouldThrowException()
         {
             CensusAnalyserException.ExceptionType expected = CensusAnalyserException.ExceptionType.FILE_NOT_FOUND;
             try
             {
-                totalRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongIndianStateCensusFilePath, indianStateCensusHeaders);
+                stateRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongIndianStateCensusFilePath, indianStateCodeHeaders);
 
             }
             catch (CensusAnalyserException cae)
@@ -64,14 +64,14 @@ namespace NUnitTestProject1
 
         }
         //TC3
-        //given incorrect stateCensusFIle(.txt) type should throw InvalidFileType Exception
+        //given incorrect stateCodeFIle(.txt) type should throw InvalidFileType Exception
         [Test]
-        public void GivenIncorrectStateCensusFileType_ShouldThrowException()
+        public void GivenIncorrectStateCodeFileType_ShouldThrowException()
         {
             CensusAnalyserException.ExceptionType expected = CensusAnalyserException.ExceptionType.INVALID_FILE_TYPE;
             try
             {
-                totalRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongIndianStateCensusFileType, indianStateCensusHeaders);
+                stateRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongindianStateCodeFileType, indianStateCensusHeaders);
 
             }
             catch (CensusAnalyserException cae)
@@ -83,14 +83,14 @@ namespace NUnitTestProject1
 
         }
         //TC4
-        //given incorrect stateCensus Delimiter  should throw Incorrect_Delimiter Exception
+        //given incorrect stateCode Delimiter  should throw Incorrect_Delimiter Exception
         [Test]
-        public void GivenIncorrectStateCensusDelimiter_ShouldThrowException()
+        public void GivenIncorrectStateCodeDelimiter_ShouldThrowException()
         {
             CensusAnalyserException.ExceptionType expected = CensusAnalyserException.ExceptionType.INCORRECT_DELIMETER;
             try
             {
-                totalRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, delimiterIndianCensusFilePath, indianStateCensusHeaders);
+                stateRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, delimiterIndianStateCodeFilePath, indianStateCodeHeaders);
 
             }
             catch (CensusAnalyserException cae)
@@ -101,15 +101,16 @@ namespace NUnitTestProject1
 
 
         }
+
         //TC5
-        //given incorrect stateCensus Header  should throw Incorrect_Header Exception
+        //given incorrect stateCode Header  should throw Incorrect_Header Exception
         [Test]
-        public void GivenIncorrectStateCensusHeader_ShouldThrowException()
+        public void GivenIncorrectStateCodeHeader_ShouldThrowException()
         {
             CensusAnalyserException.ExceptionType expected = CensusAnalyserException.ExceptionType.INCORRECT_HEADER;
             try
             {
-                totalRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongHeaderIndianCensusFilePath, indianStateCensusHeaders);
+                stateRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongHeaderStateCodeFilePath, indianStateCodeHeaders);
 
             }
             catch (CensusAnalyserException cae)
