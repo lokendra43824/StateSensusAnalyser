@@ -24,6 +24,8 @@ namespace NUnitTestProject1
         StateCensusProblem.POCO.CensusAnalyser censusAnalyser;
         Dictionary<string, CensusDTO> totalRecord;
         Dictionary<string, CensusDTO> stateRecord;
+        private string wrongIndianStateCensusFileType;
+
         [SetUp]
         public void Setup()
         {
@@ -31,7 +33,7 @@ namespace NUnitTestProject1
             totalRecord = new Dictionary<string, CensusDTO>();
             stateRecord = new Dictionary<string, CensusDTO>();
         }
-
+        //Test 1
         [Test]
         public void GivenIndianCensusDataFile_WhenReaded_ShouldReturnCensusDataCount()
         {
@@ -42,6 +44,82 @@ namespace NUnitTestProject1
 
 
         }
-       
+        //test 2
+        //given not existing stateCodeFIle should throw FileNotFound Exception
+        [Test]
+        public void GivenIncorrectStateCensusFile_ShouldThrowException()
+        {
+            CensusAnalyserException.ExceptionType expected = CensusAnalyserException.ExceptionType.FILE_NOT_FOUND;
+            try
+            {
+                totalRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongIndianStateCensusFilePath, indianStateCensusHeaders);
+
+            }
+            catch (CensusAnalyserException cae)
+            {
+                CensusAnalyserException.ExceptionType actual = cae.eType;
+                Assert.AreEqual(expected, actual);
+            }
+
+
+        }
+        //TC3
+        //given incorrect stateCensusFIle(.txt) type should throw InvalidFileType Exception
+        [Test]
+        public void GivenIncorrectStateCensusFileType_ShouldThrowException()
+        {
+            CensusAnalyserException.ExceptionType expected = CensusAnalyserException.ExceptionType.INVALID_FILE_TYPE;
+            try
+            {
+                totalRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongIndianStateCensusFileType, indianStateCensusHeaders);
+
+            }
+            catch (CensusAnalyserException cae)
+            {
+                CensusAnalyserException.ExceptionType actual = cae.eType;
+                Assert.AreEqual(expected, actual);
+            }
+
+
+        }
+        //TC4
+        //given incorrect stateCensus Delimiter  should throw Incorrect_Delimiter Exception
+        [Test]
+        public void GivenIncorrectStateCensusDelimiter_ShouldThrowException()
+        {
+            CensusAnalyserException.ExceptionType expected = CensusAnalyserException.ExceptionType.INCORRECT_DELIMETER;
+            try
+            {
+                totalRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, delimiterIndianCensusFilePath, indianStateCensusHeaders);
+
+            }
+            catch (CensusAnalyserException cae)
+            {
+                CensusAnalyserException.ExceptionType actual = cae.eType;
+                Assert.AreEqual(expected, actual);
+            }
+
+
+        }
+        //TC5
+        //given incorrect stateCensus Header  should throw Incorrect_Header Exception
+        [Test]
+        public void GivenIncorrectStateCensusHeader_ShouldThrowException()
+        {
+            CensusAnalyserException.ExceptionType expected = CensusAnalyserException.ExceptionType.INCORRECT_HEADER;
+            try
+            {
+                totalRecord = censusAnalyser.LoadCensusData(CensusAnalyser.Country.INDIA, wrongHeaderIndianCensusFilePath, indianStateCensusHeaders);
+
+            }
+            catch (CensusAnalyserException cae)
+            {
+                CensusAnalyserException.ExceptionType actual = cae.eType;
+                Assert.AreEqual(expected, actual);
+            }
+
+
+        }
+
     }
 }
